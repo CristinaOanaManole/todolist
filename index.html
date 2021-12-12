@@ -1,0 +1,43 @@
+<!-- My first To Do List en Javascript-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Oana Manole">
+  <title>Ma liste des tâches</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body id="background">
+
+  <header>
+    <div class="title">
+      <h1>Ma liste des tâches</h1>
+    </div>
+  </header>
+
+  <div id="wrapper">
+    <!-- Input texte-->
+    <input type="text" id="input-area" maxlength="50">
+    <!--Submit button-->
+    <i class="fas fa-plus-square fa-2x" type="button" id="submit" value=""></i>
+    <!--Message when the texte is submitted-->
+    <div id="condition"></div>
+    <!--Listed texte-->
+    <div id="outcome-area">
+      <ul id="ul">
+      </ul>
+    </div>
+  </div>
+
+  <!-- Animation cercle-->
+  <div class="blob">Bonne journée!</div>
+
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>

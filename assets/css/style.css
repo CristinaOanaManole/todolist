@@ -1,0 +1,192 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css);
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header propriety - Les proprietes du header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+
+/* Button SUPPRIMER propriety - Les proprietes du button SUPPRIMER*/
+button {
+  float: right;
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 0;
+  border-color: #16A085;
+  border: 0.1rem solid #dddddd;
+  color: #16A085;
+  margin: 0 0.5rem 0.5rem 0;
+  transition: all .6s;
+  min-width: 5rem;
+  text-align: center;
+}
+
+button:hover {
+  background: #16A085;
+  color: #ffffff;
+}
+
+/* Background color - La couleur du fond */  
+#background {
+  //background: linear-gradient(90deg, rgba(2,0,36,0.5971522398021709) 0%, rgba(221,246,12,0.5047152650122548) 0%, rgba(0,212,255,0.5047152650122548) 100%);
+  //background-image: url('https://images.pexels.com/photos/6340782/pexels-photo-6340782.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+  background-color:  #fcf3cf;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}  
+
+/* Title - titre */
+.title h1{
+  color: rgba(255,255,255,.2);
+  background-image: url('https://images.pexels.com/photos/4858645/pexels-photo-4858645.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: 5rem;
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: left 0px top 0px;
+  }
+  40% {
+    background-position: left 800px top 0px;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0.5rem;
+  width: 45rem;
+ // background: linear-gradient(90deg, rgba(2,0,36,0.5019141445640756) 100%, rgba(9,9,9,0.11535952271533612) 100%);
+}
+
+/* Container liste - conteneur avec la liste */
+#wrapper {
+  margin: 0.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+li {
+  padding: 0.5rem;
+  margin: 2rem;
+  position: relative;
+  right: 1.2rem;
+  word-wrap: break-word;
+  list-style: none;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 701px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  color: #154360;
+}
+
+/* Input zone - zone input texte */
+#input-area {
+  width: 100%;
+  height: 3.5rem;
+  max-width: 600px;
+  margin-right: 4rem;
+  border: none;
+  color: #154360;
+  text-align: center;
+}
+
+/* Icone button submit texte - icône button envoie texte */
+#submit {
+  height: 2.5rem;
+  max-width: 2.7rem;
+  padding-top: 1rem;
+  border: none;
+}
+
+#submit:hover {
+  background: #16A085;
+  color: #ffffff;
+}
+
+/* Input zone checkbox */
+input[type="checkbox"] {
+  margin-right: 0.2rem;
+  margin-left: 0.2rem;
+  margin-top: 0.2rem;
+  float: right;
+}
+
+/* Message when the texte is submited  - message quand le texte est rentré */
+#condition {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: #16A085;
+  font-size: 1.5rem;
+}
+
+/* Animation cercle */
+.blob {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width: 300px;
+  height: 300px;
+  margin: 10% auto;
+  position: relative;
+  color: #16A085;
+}
+
+.blob::before{
+  border: 2px solid #16A085;
+  border-radius: 58% 42% 48% 53% / 47% 60% 36% 53%;
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  left: 0; 
+  top: 0;
+  animation: rotate 16s linear infinite;
+}
+
+.blob::after{
+  border: 0.2rem solid #ffffff;
+  border-radius: 48% 42% 48% 53% / 47% 60% 36% 53%;
+  width: 100%;
+  height: 100%;
+  background: rgba(244, 166, 166, 0.1);
+  content:'';
+  position: absolute;
+  left: 0; 
+  top: 0;
+  animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+    border-color: #EC0D0D;
+  }
+  50%{
+    border-color: #154360;
+  }
+  100%{
+    transform: rotate(360deg);
+    border-color: #EC0D0D;
+  }
+}
