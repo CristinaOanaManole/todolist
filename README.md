@@ -6,6 +6,8 @@
 
 ![](./assets/img/cafe.webp)
 
+![](picture.png)
+
 ### Langage utilisé:
 <table>
 <tr>
